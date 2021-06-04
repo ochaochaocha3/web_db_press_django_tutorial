@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>ブログ記事一覧</title>
+  </head>
+  <body>
+    <h1>ブログ記事一覧</h1>
+    <ul>
+      {% for post in posts %}
+        <li><a href="/posts/{{ post.id }}/">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
